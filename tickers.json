@@ -2,7 +2,6 @@
     "tickers": [
         "NYSE:T",
         "NASDAQ:INTC",
-        "NYSE:XOM",
         "NASDAQ:CMCSA",
         "NASDAQ:MSFT",
         "NYSE:VZ",
@@ -31,7 +30,6 @@
         "NYSE:WPC",
         "EPA:DG",
         "EPA:AI",
-        "NYSE:GPC",
         "EPA:SAF",
         "EPA:OR",
         "EPA:MC",
@@ -43,6 +41,8 @@
         "EPA:FDE",
         "EPA:CS",
         "EPA:SOP",
-        "EPA:ORA"
+        "EPA:ORA",
+        "AAPL2",
+        "NYSE:XOM"
     ]
 }
