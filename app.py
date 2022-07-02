@@ -2,8 +2,13 @@ from distutils.log import debug
 from flask import Flask, request
 from flask_cors import CORS, cross_origin
 
+from api.tickers import tickers_manager
+
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
+
+app.register_blueprint(tickers_manager)
+
 
 
 @app.route("/")
@@ -41,16 +46,6 @@ def me_api():
         "username": "Anthony",
         "pass": "okok"
     }
-
-
-import json
-
-@app.route("/tickers")
-@cross_origin(origin='*')
-def get_tickers():
-    with open('tickers.json') as json_file:
-        data = json.load(json_file)
-        return data
 
 
 if __name__ == "__main__":
